@@ -1,8 +1,8 @@
 <template>
-  <div class="grid grid-cols-6">
-    <div class="hidden md:grid md:col-span-1 text-8xl text-center"><p class="side-text">TIMELINE</p></div>
-    <div class="col-span-full md:col-span-4 flex justify-center mx-auto">
-      <section class="grid grid-cols-1 lg:grid-cols-2 gap-4 py-8 justify-items-center">
+  <div class="grid grid-cols-12">
+    <div class="hidden 2xl:grid 2xl:col-span-2 text-8xl text-center"><p class="side-text">TIMELINE</p></div>
+    <div class="col-span-full 2xl:col-span-8 flex justify-center mx-auto">
+      <section class="grid grid-cols-1 xl:grid-cols-2 gap-4 2xl:gap-6 py-8 justify-items-center">
         <Timeline v-bind="workTimeline"></Timeline>
         <Timeline v-bind="educationTimeline"></Timeline>
       </section>
@@ -36,12 +36,9 @@ export default defineComponent({
 
 <style lang="postcss">
 .side-text {
-  @apply opacity-10 text-center overflow-hidden;
+  @apply text-gray-200 dark:text-gray-700;
 
-  > .dark-mode {
-    @apply opacity-5;
-  }
-
-  writing-mode: sideways-lr;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
 }
 </style>
