@@ -4,7 +4,9 @@ module.exports = {
     browser: true,
     node: true
   },
-  extends: [ '@nuxtjs/eslint-config-typescript', 'prettier/vue', 'plugin:nuxt/recommended', '@cenk1cenk2/eslint-config', '@cenk1cenk2/eslint-config/typescript' ],
+  extends: [ '@nuxtjs/eslint-config-typescript', 'prettier', 'plugin:nuxt/recommended', '@cenk1cenk2/eslint-config', '@cenk1cenk2/eslint-config/typescript' ],
   plugins: [ 'prettier' ],
-  rules: {}
+  rules: {
+    'max-len': 0
+  }
 }

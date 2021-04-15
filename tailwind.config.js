@@ -4,11 +4,11 @@
  ** Docs: https://tailwindcss.com/docs/configuration
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
+const { join } = require('path')
 const selectorParser = require('postcss-selector-parser')
 const defaultTheme = require('tailwindcss/defaultTheme')
 const plugin = require('tailwindcss/plugin')
 const { getColors } = require('theme-colors')
-const { join } = require('path')
 
 module.exports = {
   mode: 'jit',
@@ -21,8 +21,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['DM Sans', ...defaultTheme.fontFamily.sans],
-        mono: ['DM Mono', ...defaultTheme.fontFamily.mono]
+        sans: [ 'DM Sans', ...defaultTheme.fontFamily.sans ],
+        mono: [ 'DM Mono', ...defaultTheme.fontFamily.mono ]
       },
       colors: {
         primary: getColors('#cd0043'),
@@ -39,14 +39,14 @@ module.exports = {
         padding: 'padding'
       },
       variants: {
-        margin: ['responsive', 'last', 'first'],
-        padding: ['responsive', 'hover', 'first', 'last'],
-        backgroundColor: ['responsive', 'hover', 'focus', 'dark', 'dark-focus', 'dark-hover'],
-        textColor: ['responsive', 'hover', 'group-hover', 'focus', 'dark', 'dark-hover', 'dark-focus'],
-        borderColor: ['responsive', 'hover', 'focus', 'dark', 'dark-focus'],
-        borderWidth: ['responsive', 'first', 'last'],
-        typography: ['responsive', 'dark'],
-        animation: ['hover', 'focus', 'dark-focus', 'dark-hover']
+        margin: [ 'responsive', 'last', 'first' ],
+        padding: [ 'responsive', 'hover', 'first', 'last' ],
+        backgroundColor: [ 'responsive', 'hover', 'focus', 'dark', 'dark-focus', 'dark-hover' ],
+        textColor: [ 'responsive', 'hover', 'group-hover', 'focus', 'dark', 'dark-hover', 'dark-focus' ],
+        borderColor: [ 'responsive', 'hover', 'focus', 'dark', 'dark-focus' ],
+        borderWidth: [ 'responsive', 'first', 'last' ],
+        typography: [ 'responsive', 'dark' ],
+        animation: [ 'hover', 'focus', 'dark-focus', 'dark-hover' ]
       }
     },
     typography: (theme) => ({
@@ -231,7 +231,7 @@ module.exports = {
       'nuxt.config.js'
     ],
     options: {
-      whitelist: ['dark-mode']
+      whitelist: [ 'dark-mode' ]
     }
   }
 }

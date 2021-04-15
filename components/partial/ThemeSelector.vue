@@ -27,12 +27,13 @@
 
 <script>
 import { faLightbulb, faMoon } from '@fortawesome/free-regular-svg-icons'
+
 export default {
   computed: {
-    faLightbulb() {
+    faLightbulb () {
       return faLightbulb
     },
-    faMoon() {
+    faMoon () {
       return faMoon
     }
   }

@@ -1,14 +1,11 @@
-import { Store } from 'vuex'
-import { getModule } from 'vuex-module-decorators'
+import { GetterTree, ActionTree, MutationTree } from 'vuex'
 
-import { MenuModule } from '~/store/menu'
+export const state = () => ({})
 
-export let MenuStore: MenuModule
+export type RootState = ReturnType<typeof state>
 
-function initialiseStores (store: Store<any>): void {
-  MenuStore = getModule(MenuModule, store)
-}
+export const getters: GetterTree<RootState, RootState> = {}
 
-const initializer = (store: Store<any>): void => initialiseStores(store)
+export const mutations: MutationTree<RootState> = {}
 
-export const plugins = [ initializer ]
+export const actions: ActionTree<RootState, RootState> = {}

@@ -6,4 +6,5 @@ export interface Timeline {
   logo: string
   name: string
   location: string
+  fixedBg?: boolean
 }

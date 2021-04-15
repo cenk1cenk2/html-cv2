@@ -20,20 +20,24 @@ export default {
     ]
   },
 
+  target: 'static',
+
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/css/main.css'],
+  css: [ '@/assets/css/main.css' ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['@/plugins/composition-api', '~/store/index'],
+  plugins: [ '@/plugins/composition-api' ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: {
+    dirs: [ '@/components', '@/components/partial', { path: '@/components/app', prefix: 'App' } ]
+  },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxt/typescript-build', '@nuxtjs/stylelint-module', '@nuxtjs/tailwindcss', 'nuxt-typed-vuex', '@nuxtjs/fontawesome', '@nuxtjs/color-mode'],
+  buildModules: [ '@nuxt/typescript-build', '@nuxtjs/stylelint-module', '@nuxtjs/tailwindcss', 'nuxt-typed-vuex', '@nuxtjs/fontawesome', '@nuxtjs/color-mode' ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/pwa', '@nuxt/content'],
+  modules: [ '@nuxtjs/pwa' ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
