@@ -8,8 +8,8 @@
     <div class="mx-auto lg:mx-0 pt-3 border-b-2 border-primary-500 opacity-50"></div>
     <ul class="pt-2">
       <li v-for="(t, index) in timelineData" :key="index" class="flex flex-row items-center h-28 xl:h-36">
-        <div class="pr-8 xl:pr-16 border-r-4 border-gray-200 dark:border-gray-700 -mr-9 xl:-mr-12 h-full flex items-center">
-          <div class="text-center flex flex-col w-28">
+        <div class="pr-9 xl:pr-12 border-r-4 border-gray-200 dark:border-gray-700 -mr-6 xl:-mr-9 h-full flex items-center">
+          <div class="text-center flex flex-col w-20">
             <p>
               {{ t.end }}<br />
               {{ t.start }}
@@ -27,7 +27,7 @@
           ></div>
         </div>
 
-        <div class="pl-2 xl:pl-4">
+        <div class="pl-2 xl:pl-4 w-full">
           <p class="font-semibold">{{ t.name }}</p>
           <p class="text-sm text-gray-400">{{ t.location }}</p>
           <p v-if="t.role" class="text-sm 2xl:text-base">{{ t.role }}</p>
