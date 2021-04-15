@@ -34,7 +34,7 @@ export default {
   css: [ '@/assets/css/main.css' ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [ '@/plugins/composition-api' ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: {
@@ -42,7 +42,15 @@ export default {
   },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [ '@nuxt/typescript-build', '@nuxtjs/stylelint-module', '@nuxtjs/tailwindcss', 'nuxt-typed-vuex', '@nuxtjs/fontawesome', '@nuxtjs/color-mode' ],
+  buildModules: [
+    '@nuxt/typescript-build',
+    '@nuxtjs/composition-api/module',
+    '@nuxtjs/stylelint-module',
+    '@nuxtjs/tailwindcss',
+    'nuxt-typed-vuex',
+    '@nuxtjs/fontawesome',
+    '@nuxtjs/color-mode'
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [ '@nuxtjs/pwa' ],

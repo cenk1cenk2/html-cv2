@@ -14,7 +14,7 @@
 import { EDUCATION_TIMELINE } from '@/data/education.data'
 import { WORK_TIMELINE } from '@/data/work.data'
 import { faUserGraduate, faBuilding } from '@fortawesome/free-solid-svg-icons'
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
   setup () {

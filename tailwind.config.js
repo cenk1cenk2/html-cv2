@@ -9,6 +9,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const { getColors } = require('theme-colors')
 
 module.exports = {
+  mode: 'jit',
   darkMode: 'class',
   future: {
     removeDeprecatedGapUtilities: true,

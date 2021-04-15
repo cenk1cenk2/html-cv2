@@ -39,7 +39,7 @@
 
 <script lang="ts">
 import { Timeline } from '@/interfaces/timeline.interface'
-import { defineComponent, PropType } from '@vue/composition-api'
+import { defineComponent, PropType } from '@nuxtjs/composition-api'
 
 export default defineComponent({
   props: {
