@@ -26,8 +26,8 @@ steps:
     depends_on:
       - lint
     commands:
-      - yarn build
-      - yarn generate
+      - NODE_ENV=production yarn build
+      - NODE_ENV=production yarn generate
 
   - name: publish
     image: plugins/docker

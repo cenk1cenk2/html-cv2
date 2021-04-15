@@ -20,6 +20,14 @@ export default {
     ]
   },
 
+  tailwindcss: {
+    jit: true
+  },
+
+  colorMode: {
+    classSuffix: ''
+  },
+
   target: 'static',
 
   // Global CSS: https://go.nuxtjs.dev/config-css

@@ -22,7 +22,7 @@
           :class="[t.fixedBg ? 'dark:bg-white' : 'dark:bg-gray-800']"
         >
           <div
-            class="w-4/5 h-4/5 inline-block bg-center bg-contain bg-no-repeat flex flex-auto overflow-hidden"
+            class="w-full h-full block bg-center bg-contain bg-no-repeat flex flex-auto overflow-hidden"
             :style="{ 'background-image': `url('${require('~/assets/img/logo/' + t.logo)}')` }"
           ></div>
         </div>

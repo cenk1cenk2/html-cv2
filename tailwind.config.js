@@ -5,13 +5,11 @@
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 const { join } = require('path')
-const selectorParser = require('postcss-selector-parser')
 const defaultTheme = require('tailwindcss/defaultTheme')
-const plugin = require('tailwindcss/plugin')
 const { getColors } = require('theme-colors')
 
 module.exports = {
-  mode: 'jit',
+  darkMode: 'class',
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
@@ -37,16 +35,6 @@ module.exports = {
       },
       transitionProperty: {
         padding: 'padding'
-      },
-      variants: {
-        margin: [ 'responsive', 'last', 'first' ],
-        padding: [ 'responsive', 'hover', 'first', 'last' ],
-        backgroundColor: [ 'responsive', 'hover', 'focus', 'dark', 'dark-focus', 'dark-hover' ],
-        textColor: [ 'responsive', 'hover', 'group-hover', 'focus', 'dark', 'dark-hover', 'dark-focus' ],
-        borderColor: [ 'responsive', 'hover', 'focus', 'dark', 'dark-focus' ],
-        borderWidth: [ 'responsive', 'first', 'last' ],
-        typography: [ 'responsive', 'dark' ],
-        animation: [ 'hover', 'focus', 'dark-focus', 'dark-hover' ]
       }
     },
     typography: (theme) => ({
@@ -170,30 +158,7 @@ module.exports = {
     })
   },
   plugins: [
-    plugin(function ({ addVariant, prefix, e }) {
-      addVariant('dark', ({ modifySelectors, separator }) => {
-        modifySelectors(({ selector }) => {
-          return selectorParser((selectors) => {
-            selectors.walkClasses((sel) => {
-              sel.value = `dark${separator}${sel.value}`
-              sel.parent.insertBefore(sel, selectorParser().astSync(prefix('.dark-mode ')))
-            })
-          }).processSync(selector)
-        })
-      })
-
-      addVariant('dark-hover', ({ modifySelectors, separator }) => {
-        modifySelectors(({ className }) => {
-          return `.dark-mode .${e(`dark-hover${separator}${className}`)}:hover`
-        })
-      })
-
-      addVariant('dark-focus', ({ modifySelectors, separator }) => {
-        modifySelectors(({ className }) => {
-          return `.dark-mode .${e(`dark-focus${separator}${className}`)}:focus`
-        })
-      })
-    }),
+    require('tailwindcss-dark-mode')(),
     require('@tailwindcss/typography'),
     require('tailwind-css-variables')({
       colors: 'color',
@@ -220,7 +185,6 @@ module.exports = {
     })
   ],
   purge: {
-    // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
     enabled: process.env.NODE_ENV === 'production',
     content: [
       'content/**/*.md',
@@ -231,7 +195,7 @@ module.exports = {
       'nuxt.config.js'
     ],
     options: {
-      whitelist: [ 'dark-mode' ]
+      whitelist: [ 'dark' ]
     }
   }
 }

@@ -1,5 +1,5 @@
-.dark-mode {
-  @apply text-white;
+.dark {
+  @apply text-white bg-gray-900;
 }
 
 /* width */
