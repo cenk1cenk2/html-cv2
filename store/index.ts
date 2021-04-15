@@ -1,6 +1,6 @@
 import { GetterTree, ActionTree, MutationTree } from 'vuex'
 
-export const state = () => ({})
+export const state = (): Record<string, unknown> => ({})
 
 export type RootState = ReturnType<typeof state>
 

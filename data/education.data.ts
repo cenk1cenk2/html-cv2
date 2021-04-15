@@ -4,7 +4,7 @@ export const EDUCATION_TIMELINE: Timeline[] = [
   {
     end: '2020',
     start: '2018',
-    description: "Master's Degree",
+    description: 'Master\'s Degree',
     logo: 'fhtw.png',
     name: 'FH Technikum Wien',
     location: 'Vienna, Austria',
@@ -14,7 +14,7 @@ export const EDUCATION_TIMELINE: Timeline[] = [
   {
     end: '2015',
     start: '2010',
-    description: "Bachelor's Degree",
+    description: 'Bachelor\'s Degree',
     logo: 'koc.png',
     name: 'Koç University',
     location: 'İstanbul/Turkey',
