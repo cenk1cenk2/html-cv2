@@ -1,9 +1,9 @@
 <template>
   <AppSection title="timeline">
-    <section class="grid grid-cols-1 xl:grid-cols-2 gap-8 2xl:gap-12 w-full justify-items-center">
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 2xl:gap-12 w-full justify-items-center">
       <Timeline v-bind="workTimeline" class="w-full"></Timeline>
       <Timeline v-bind="educationTimeline" class="w-full"></Timeline>
-    </section>
+    </div>
   </AppSection>
 </template>
 

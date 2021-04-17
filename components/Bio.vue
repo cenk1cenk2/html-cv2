@@ -1,7 +1,7 @@
 <template>
   <AppSection title="bio">
     <div class="w-full bg-gray-100 dark:bg-gray-800 shadow-xl">
-      <article class="flex justify-center p-2 lg:p-4">
+      <article class="flex justify-center p-2 lg:p-4 py-4">
         <nuxt-content :document="bio" class="prose dark:prose-dark prose-xl lg:prose-2xl" />
       </article>
     </div>
@@ -27,7 +27,8 @@ export default defineComponent({
     )
 
     return {
-      bio
+      bio,
+      readMore: false
     }
   }
 })

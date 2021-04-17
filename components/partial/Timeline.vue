@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2 lg:p-4 bg-gray-100 dark:bg-gray-800 shadow-xl w-full">
+  <div class="p-2 lg:p-4 py-4 bg-gray-100 dark:bg-gray-800 shadow-xl w-full">
     <h2 class="text-3xl font-bold text-center">
       <FontAwesomeIcon :icon="timelineIcon" class="inline-block self-center mr-2" />
       {{ timelineName }}
