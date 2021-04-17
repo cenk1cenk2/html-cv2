@@ -4,7 +4,9 @@ title: bio
 
 **Hello, I am Cenk.** [^1]
 
-I am a mostly backend and developer operations software engineer, who is always open to set sail to new adventures. Albeit I have trained to be an engineer, I was mostly doing software-related stuff in my free time, initially by managing servers and creating random services to solve my own problems starting from early age, and after that I have decided to move to Vienna, I realized that I will be a complete person if I pursue programming as a career.
+I am a mostly backend and developer operations software engineer, who is always open to set sail to new adventures. Albeit I have trained to be an engineer, I was mostly doing software-related stuff in my free time, initially by managing servers and creating random services to solve my own problems starting from early age, and after I have decided to move to Vienna, I realized that I will be a complete person if I pursue programming as a career.
+
+<!--more-->
 
 I am the guy that might have one too many servers at home according to my wife and running complex setups that mostly serve me. But the plus side to that is I have big enough of a playground to experiment with new technologies as well as sharpening my skill-set to have a solution for novelty cases when I encounter them in real-life.
 
@@ -20,4 +22,4 @@ One of the most important things in software for me is resource usage. I strictl
 
 One of the joys of my life is to discuss this "nerdy" stuff with like-minded people and exchange ideas even though according to my experience they are rarer than unicorns.
 
-[^1]: yeah, i know that picture is quite old and i am a older man that does not look like that anymore
+[^1]: yeah, i know that picture is quite old and i am an much older man that does not look like that anymore

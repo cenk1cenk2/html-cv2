@@ -27,8 +27,7 @@ export default defineComponent({
     )
 
     return {
-      bio,
-      readMore: false
+      bio
     }
   }
 })
