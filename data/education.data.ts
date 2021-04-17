@@ -17,17 +17,17 @@ export const EDUCATION_TIMELINE: Timeline[] = [
     description: 'Bachelor\'s Degree',
     logo: 'koc.png',
     name: 'Koç University',
-    location: 'İstanbul/Turkey',
+    location: 'İstanbul, Turkey',
     role: 'Electrical and Electronics Engineering (English)'
   },
 
   {
     end: '2010',
-    start: '2015',
+    start: '2005',
     description: 'High School',
     logo: 'kal.png',
     name: 'Kadıköy Anadolu Lisesi',
-    location: 'İstanbul/Turkey',
+    location: 'İstanbul, Turkey',
     role: 'MF (English)'
   }
 ]

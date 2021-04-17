@@ -1,6 +1,6 @@
 <template>
   <div class="bg-cover" :style="{ 'background-image': `url('${require('~/assets/img/background.png')}')` }">
-    <div class="flex items-start pt-20 lg:pt-0 lg:items-center h-screen lg:my-0 lg:pl-48">
+    <div class="flex items-start pt-20 lg:pt-0 lg:items-center h-auto pb-20 md:h-screen lg:my-0 lg:pl-48">
       <div
         class="max-w-lg lg:max-w-3xl rounded-lg shadow-2xl transition ease-in-out duration-300 bg-white dark:bg-gray-800 bg-opacity-90 border-2 lg:border-4 border-gray-200 dark:border-gray-700 mx-auto"
       >
@@ -16,7 +16,7 @@
 
             <div class="mx-auto lg:mx-0 pt-3 border-b-2 border-primary-500 opacity-50"></div>
             <p class="pt-4 text-base font-bold flex justify-center">Electrical&Electronics Engineer by trait, developer by heart.</p>
-            <p class="pt-4 text-sm flex justify-center">Vienna/Austria</p>
+            <p class="pt-4 text-sm flex justify-center">Vienna, Austria</p>
 
             <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
               <a :href="`mailto:cenk@kilic.dev`" target="_blank"><FontAwesomeIcon :icon="fa.email" class="text-4xl transform hover:scale-110 hover:text-primary-500" /></a>

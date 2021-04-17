@@ -3,7 +3,12 @@
     <section>
       <UserCard />
     </section>
-    <section><WhatDidIDo></WhatDidIDo></section>
+    <section>
+      <Bio />
+    </section>
+    <section>
+      <WhatDidIDo />
+    </section>
   </div>
 </template>
 

@@ -1,13 +1,10 @@
 <template>
-  <div class="grid grid-cols-12">
-    <div class="hidden 2xl:grid 2xl:col-span-2 text-8xl text-center"><p class="side-text">TIMELINE</p></div>
-    <div class="col-span-full 2xl:col-span-8 flex justify-center mx-auto">
-      <section class="grid grid-cols-1 xl:grid-cols-2 gap-4 2xl:gap-6 py-8 justify-items-center">
-        <Timeline v-bind="workTimeline"></Timeline>
-        <Timeline v-bind="educationTimeline"></Timeline>
-      </section>
-    </div>
-  </div>
+  <AppSection title="timeline">
+    <section class="grid grid-cols-1 xl:grid-cols-2 gap-8 2xl:gap-12 w-full justify-items-center">
+      <Timeline v-bind="workTimeline" class="w-full"></Timeline>
+      <Timeline v-bind="educationTimeline" class="w-full"></Timeline>
+    </section>
+  </AppSection>
 </template>
 
 <script lang="ts">
@@ -33,12 +30,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<style lang="postcss">
-.side-text {
-  @apply text-gray-200 dark:text-gray-700;
-
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-}
-</style>

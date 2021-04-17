@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2 lg:p-4 bg-gray-100 dark:bg-gray-800 container shadow-xl max-w-xl">
+  <div class="p-2 lg:p-4 bg-gray-100 dark:bg-gray-800 shadow-xl w-full">
     <h2 class="text-3xl font-bold pt-8 lg:pt-0 text-center">
       <FontAwesomeIcon :icon="timelineIcon" class="inline-block self-center mr-2" />
       {{ timelineName }}
@@ -10,10 +10,8 @@
       <li v-for="(t, index) in timelineData" :key="index" class="flex flex-row items-center h-28 xl:h-36">
         <div class="pr-9 xl:pr-12 border-r-4 border-gray-200 dark:border-gray-700 -mr-6 xl:-mr-9 h-full flex items-center">
           <div class="text-center flex flex-col w-20">
-            <p>
-              {{ t.end }}<br />
-              {{ t.start }}
-            </p>
+            <p>{{ t.end }}</p>
+            <p>{{ t.start }}</p>
             <p v-if="t.description" class="text-gray-400 italic text-sm">{{ t.description }}</p>
           </div>
         </div>
@@ -27,7 +25,7 @@
           ></div>
         </div>
 
-        <div class="pl-2 xl:pl-4 w-full">
+        <div class="pl-4 xl:pl-8 w-full">
           <p class="font-semibold">{{ t.name }}</p>
           <p class="text-sm text-gray-400">{{ t.location }}</p>
           <p v-if="t.role" class="text-sm 2xl:text-base">{{ t.role }}</p>
