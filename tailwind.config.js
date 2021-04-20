@@ -38,7 +38,7 @@ module.exports = {
         padding: 'padding'
       },
       typography: (theme) => ({
-        default: {
+        DEFAULT: {
           css: {
             a: {
               color: theme('colors.primary.500'),
