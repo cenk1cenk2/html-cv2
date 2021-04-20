@@ -31,13 +31,8 @@
     @apply !inline-block;
   }
 
-  & > .footnotes hr {
-    @apply my-0;
-  }
-
   & h2,
   & h3 {
-    /* Fix anchor scrollTo */
     &::before {
       display: block;
       content: ' ';
@@ -47,21 +42,18 @@
       pointer-events: none;
     }
 
-    /* Style anchor links on headings added by @nuxt/content */
     & > a {
       @apply ml-5;
 
       &::before {
+        @apply text-primary-500 font-normal text-xl leading-8 -ml-5 pr-2 absolute;
+
         content: '#';
-        @apply text-primary-500 font-normal text-xl leading-8 -ml-5 pr-2 absolute opacity-100;
       }
 
-      @screen lg {
-        &::before {
-          @apply opacity-0 ml-0;
-        }
-      }
+      @apply lg:ml-0;
     }
+
     &:hover {
       & > a::before {
         @apply opacity-100;
@@ -72,7 +64,6 @@
   & .nuxt-content-highlight {
     @apply relative;
 
-    /* Style filename span added by @nuxt/content */
     & > .filename {
       @apply absolute right-0 top-0 text-gray-100 z-10 font-mono text-sm tracking-tight leading-none mr-4 mt-3;
     }
@@ -82,7 +73,6 @@
       @apply pt-8;
     }
 
-    /* Style copy button added in `pages/_.vue` */
     & > .copy {
       @apply hidden absolute right-0 bottom-0 leading-none shadow-lg px-2 py-2 text-white bg-gray-800 text-sm uppercase rounded-md border border-white font-semibold mr-3 mb-3;
 
@@ -94,6 +84,7 @@
         @apply outline-none bg-gray-600;
       }
     }
+
     &:hover {
       & > .copy {
         @apply block;
@@ -102,9 +93,7 @@
   }
 
   /* Force style on pre elements */
-  /* stylelint-disable-next-line no-descending-specificity */
   & pre[class*='language-'] {
-    /* Make pre static so the relative goes to the parent (.nuxt-content-highlight) */
     @apply bg-gray-800 static;
     @apply text-base;
   }
