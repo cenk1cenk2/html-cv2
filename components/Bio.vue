@@ -50,6 +50,8 @@ export default defineComponent({
   methods: {
     readMoreToggle () {
       this.readMore = !this.readMore
+
+      this.$scrollTo('#bio', 300, {})
     }
   }
 })

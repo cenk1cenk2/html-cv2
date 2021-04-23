@@ -1,14 +1,8 @@
 <template>
   <div>
-    <section>
-      <UserCard />
-    </section>
-    <section>
-      <Bio />
-    </section>
-    <section>
-      <WhatDidIDo />
-    </section>
+    <UserCard />
+    <Bio />
+    <WhatDidIDo />
   </div>
 </template>
 

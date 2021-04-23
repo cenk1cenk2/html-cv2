@@ -58,7 +58,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [ '@nuxtjs/pwa' ],
+  modules: [ '@nuxtjs/pwa', 'vue-scrollto/nuxt' ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
