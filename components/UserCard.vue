@@ -3,7 +3,7 @@
     <div class="bg-cover" :style="{ 'background-image': `url('${require('@/assets/img/background.png')}')` }">
       <div class="flex items-start pt-20 pb-20 lg:pt-0 lg:pb-0 lg:items-center h-auto lg:h-screen lg:my-0 lg:pl-48">
         <div
-          class="max-w-lg lg:max-w-3xl rounded-lg shadow-2xl transition ease-in-out duration-300 bg-white dark:bg-gray-800 bg-opacity-90 border-2 lg:border-4 border-gray-200 dark:border-gray-700 mx-auto"
+          class="max-w-lg lg:max-w-3xl shadow-2xl transition ease-in-out duration-300 bg-white dark:bg-gray-800 bg-opacity-90 border-2 lg:border-4 border-gray-200 dark:border-gray-700 mx-auto"
         >
           <div class="p-4 lg:p-12 text-center lg:text-left">
             <div class="-mt-16 lg:-mt-96 lg:relative lg:top-72 lg:-left-64 lg:mr-64">

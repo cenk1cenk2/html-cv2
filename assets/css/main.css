@@ -31,6 +31,12 @@
     @apply !inline-block;
   }
 
+  .footnotes {
+    hr {
+      @apply m-0;
+    }
+  }
+
   & h2,
   & h3 {
     &::before {
