@@ -6,6 +6,6 @@
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
-    "types": ["@nuxt/types", "@nuxt/content", "@types/node", "vue-scrollto"]
+    "types": ["@nuxt/types", "@nuxt/content", "@types/node", "vue-scrollto", "vuex"]
   }
 }

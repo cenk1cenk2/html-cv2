@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/named
 import { GetterTree, ActionTree, MutationTree } from 'vuex'
 
 export const state = (): Record<string, unknown> => ({})

@@ -36,8 +36,9 @@
 </template>
 
 <script lang="ts">
-import { Timeline } from '@/interfaces/timeline.interface'
 import { defineComponent, PropType } from '@nuxtjs/composition-api'
+
+import { Timeline } from '@/interfaces/timeline.interface'
 
 export default defineComponent({
   props: {
