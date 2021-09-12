@@ -25,7 +25,7 @@ export default {
   },
 
   tailwindcss: {
-    jit: true
+    mode: 'jit'
   },
 
   colorMode: {
